@@ -28,7 +28,7 @@ def read_calendar(url, options = {})
   require 'net/http'
   require 'rexml/document'
   
-  url = url.gsub("/basic", "/full") + "?"
+  url = url.gsub("/basic", "/full") + "?orderby=starttime&"
   url += "futureevents=true&" if options[:future_events]
   url += "end-max=" + Date.today.rfc3339 + "&" if options[:only_today]
 
