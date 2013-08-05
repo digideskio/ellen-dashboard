@@ -1,0 +1,35 @@
+html { 
+  margin:0; padding: 0; height: 100% 
+}
+
+body { 
+  margin:0; padding: 0; height: 100%;
+  font-family: sans-serif; color: white
+}
+
+.col1, .col2, .col3 {
+  height: 100%;
+  float: left;
+  padding: 0;
+}
+
+.col1 {
+  width: 40%; 
+  background: #0090b0;
+}
+
+.col2 {
+  width: 40%;
+  background: #60a040;
+}
+
+.col3 {
+  width: 20%;
+  background: #b07070;
+}
+
+.date-header {
+  padding: 10px;
+  background: #006090;
+}
+

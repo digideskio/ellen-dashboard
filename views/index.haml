@@ -1,0 +1,24 @@
+!!! Strict
+%html(lang="en")
+  %head
+    %meta(charset="utf-8")
+    %meta(http-equiv="X-UA-Compatible" content="IE=9,chrome=1")
+
+    %link(rel="stylesheet" type="text/css" href="style.css")
+
+  %body
+    .col1
+      .date-header
+        %h1= Date.today.strftime "%A"
+        %h2= Date.today.strftime "%B %-d, %Y"
+
+      .schedule
+        %h2 Schedule
+
+        
+
+    .col2
+      %h1 Upcoming Events
+
+    .col3
+      %h1 Featured Project
