@@ -15,7 +15,12 @@
       .schedule
         %h2 Schedule
 
-        
+        - @upcoming.each do |event|
+          %p
+            = event[:start].strftime("%b %e, %I:%M %p")
+            to
+            = event[:end].strftime("%I:%M %p")
+            %b - #{event[:title]}
 
     .col2
       %h1 Upcoming Events
